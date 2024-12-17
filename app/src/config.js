@@ -27,7 +27,7 @@ IPv4 Configuration Guide:
         This ensures the public IP remains consistent across instance reboots.
     Note: Always enclose the IP address in single quotes ''.
 */
-const IPv4 = '167.235.140.230'; // Replace with the appropriate IPv4 address for your environment.
+const IPv4 = process.env.SERVER_IP; // Replace with the appropriate IPv4 address for your environment.
 
 const numWorkers = require('os').cpus().length;
 
